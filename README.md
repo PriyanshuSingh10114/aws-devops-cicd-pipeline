@@ -160,19 +160,15 @@ terraform apply --auto-approve
 
 - ECR Repository
 
-  ![ecr](screenshots/7.png)
-
 - ECS Cluster
 
-  ![ecs](screenshots/8.png)
+
 
 - ALB
 
-  ![alb](screenshots/9.png)
 
 - S3 Bucket
 
-  ![s3](screenshots/10.png)
 
 ### 6. Access Your Application
 
