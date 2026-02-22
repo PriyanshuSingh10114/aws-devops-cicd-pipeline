@@ -8,19 +8,6 @@
 
 A **production-ready, fully automated CI/CD pipeline** built on AWS using Terraform, featuring containerized deployment with ECS Fargate, automated builds with CodePipeline, and a modern responsive web interface.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [CI/CD Pipeline](#cicd-pipeline)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
 ---
 
 ## Overview
@@ -101,7 +88,6 @@ This project demonstrates a **complete AWS DevOps pipeline** that automatically 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Amitabh-DevOps/aws-devops.git
 cd aws-devops
 ```
 
@@ -111,7 +97,7 @@ cd aws-devops
 aws configure
 # Enter your AWS Access Key ID
 # Enter your AWS Secret Access Key
-# Default region: us-east-1
+# Default region: ap-south-1
 # Default output format: json
 ```
 
@@ -131,7 +117,7 @@ cp terraform.tfvars.example terraform.tfvars
 Edit `terraform.tfvars`:
 
 ```hcl
-aws_region      = "us-east-1"
+aws_region      = "ap-south-1"
 project_name    = "aws-devops"
 github_repo     = "YourUsername/aws-devops"  # Change this!
 github_branch   = "main"
@@ -179,20 +165,6 @@ alb_url = "http://aws-devops-alb-xxxxx.us-east-1.elb.amazonaws.com/"
 codepipeline_url = "https://console.aws.amazon.com/codesuite/codepipeline/..."
 ecr_repository_url = "xxxxx.dkr.ecr.us-east-1.amazonaws.com/aws-devops-app"
 ```
-
-Visit the `alb_url` to see your application! 🎉
-
-- Application Screenshot
-
-  ![application](screenshots/1.png)
-
-  ![application](screenshots/2.png)
-
-  ![application](screenshots/3.png)
-
-  ![application](screenshots/4.png)
-
-  ![application](screenshots/5.png)
 
 ---
 
@@ -294,10 +266,6 @@ git push origin main
 
 # Pipeline automatically triggers!
 ```
-
-- Pipeline Screenshot
-
-  ![pipeline](screenshots/6.png)
 
 ### Monitoring & Logging
 
